@@ -35,7 +35,6 @@
             ./autogen.sh
             ./configure
             ${pkgs.gnumake}/bin/make
-            ls -lah
             cp ./mkp224o $out/bin/mkp224o
           '';
           checkPhase = "true";
