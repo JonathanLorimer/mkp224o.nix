@@ -38,14 +38,8 @@
             ls -lah
             cp ./mkp224o $out/bin/mkp224o
           '';
-          checkPhase = ''
-            echo "checking mk224o"
-            true
-          '';
-          installPhase = ''
-            echo "wrapping mk244o with libs"
-            true
-          '';
+          checkPhase = "true";
+          installPhase = "true";
         };
 
         # nix run
